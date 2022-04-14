@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Beats</title>
+	<link rel="stylesheet" type="text/css" href="CSS/1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d67d08b457.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="image/logo.png"/>
+	<meta name="viewport" content="width=device-width initial-scale=1">
+</head>
+<body>
+    <!-- Navigation Bar -->
+	<div class="flex-r navbar">
+        <div class="flex-r navbarLeftSide">
+            <div class="flex-r logo">
+                <div class="flex-c logoImage">
+                    <img src="image/logo.png"/>
+                </div>
+                <div class="flex-c logoName">
+                                                
+                <span style="font-family: 'Shadows Into Light', cursive;">Beats</span>
+                </div>
+            </div>
+
+            <div class="flex-c fav">
+                <a href="fav.html">Favourites</a>
+            </div>
+        </div>
+        <div class="flex-r navbarRightSide">
+            <div class="flex-c searchInput">
+                <span class="search-mic-icon">
+                    <input type="text" placeholder="Search..." />
+                </span>
+            </div>
+            <div class="flex-c notification">
+                <div class="notification-bell">
+                    <span><i class="fa fa-bell"></i></span>
+                </div>
+            </div>
+            <div class="flex-c profile">
+                <div class="profileImage">
+                    <img src="image/myimage.jpg"/>
+                </div>
+            </div>
+        </div>
+	</div>
+	<div class="mainPage">
+        <!-- Carsoul Image -->
+		<div class="home_carousel">
+			<img src="image/t4.png" class="left"/>
+			<img src="image/c2.jpg" class="left"/>
+			<img src="image/c3.jpg" class="right"/>
+			<img src="image/c4.jpg" class="right"/>
+
+        </div>
+        <!-- Latest Release Section -->
+        <div class="l-songs">
+            <h2>Latest Release</h2>
+        <div class="latest">
+            <div>
+                <div><img src="image/t1.png"><span class="art-name">Chill , 2011</span><span class="play"><i class="fas fa-play"></i></span></div>
+                <div id="clickme1"><button type="button" class="btn" onclick="document.getElementById('cl1').style.display='block'"><i class="fas fa-ellipsis-h"></i></button>
+                <div class="pop-up" id="cl1">
+                    <div>Play</div>
+                    <div>Queue </div>
+                    <div>Shuffle</div>
+                    <button onclick="document.getElementById('cl1').style.display='none'" class="btn" style="color: black;">Close</button>
+                    
+                </div>    
+                    
+                5:20</div>
+            </div>
+            <div>
+                <div><img src="image/t2.png"><span class="art-name">Taylor , 2011</span><span class="play"><i class="fas fa-play"></i></span></div>
+                <div id="clickme1"><button type="button" class="btn" onclick="document.getElementById('cl2').style.display='block'"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="pop-up" id="cl2">
+                        <div>Play</div>
+                        <div>Queue </div>
+                        <div>Shuffle</div>
+                        <button onclick="document.getElementById('cl2').style.display='none'" class="btn" style="color: black;">Close</button>
+                        
+                    </div>    
+                        
+                    5:20</div>
+            </div>
+            <div>
+                <div><img src="image/t3.png"><span class="art-name">Ed , 2011</span><span class="play"><i class="fas fa-play"></i></span></div>
+                <div id="clickme1"><button type="button" class="btn" onclick="document.getElementById('cl3').style.display='block'"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="pop-up" id="cl3">
+                        <div>Play</div>
+                        <div>Queue </div>
+                        <div>Shuffle</div>
+                        <button onclick="document.getElementById('cl3').style.display='none'" class="btn" style="color: black;">Close</button>
+                        
+                    </div>    
+                        
+                    5:20</div>
+            </div>
+            <div>
+                <div><img src="image/t4.png"><span class="art-name">Alexa , 2012</span><span class="play"><i class="fas fa-play"></i></span></div>
+                <div id="clickme1"><button type="button" class="btn" onclick="document.getElementById('cl4').style.display='block'"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="pop-up" id="cl4">
+                        <div>Play</div>
+                        <div>Queue </div>
+                        <div>Shuffle</div>
+                        <button onclick="document.getElementById('cl4').style.display='none'" class="btn" style="color: black;">Close</button>
+                        
+                    </div>    
+                        
+                    5:20</div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Popular Artist Section -->
+    <div class="artist">
+        <h2>Popular Artists</h2>
+        <div class="p-artist">
+            <div>
+                <a href="fav.html"><img src="image/a1.jpg" class="artist-pic"></a>
+                <span class="play1">
+                    <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Enrique Iglesias</div>
+            </div>
+            <div>
+                <img src="image/a2.jpg" class="artist-pic">
+                <span class="play1">
+                    <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Ariana Grande</div>
+            </div>
+            <div>
+                <img src="image/a3.jpg" class="artist-pic">
+                <span class="play1">
+                    <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Zayn Malik</div>
+            </div>
+            <div>
+                <img src="image/a4.jpg" class="artist-pic">
+                <span class="play1">
+                    <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Cavin Harris</div>
+            </div>
+            <div>
+                <a href="fav.html"><img src="image/a5.jpg" class="artist-pic"></a>
+                <span class="play1">
+                     <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Taylor Swift</div>
+            </div>
+            <div>
+                <img src="image/a6.jpg" class="artist-pic">
+                <span class="play1">
+                    <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Dua Lipa</div>
+            </div>
+            <div>
+                <img src="image/a7.jpg" class="artist-pic">
+                <span class="play1">
+                    <i class="fas fa-play"></i>
+                </span>
+                <div class="artist-name">Christina Perri</div>
+            </div>
+        </div>
+    </div>
+    <!-- What's your Poison Section -->
+    <div class="catagory">
+        <h2>What's Your Poison ?</h2>
+        <div class="f-cat">
+            <div><img src="image/st.PNG" class="artist-pic"></div>
+            <div><img src="image/p2.jpg" class="artist-pic"></div>
+            <div><img src="image/p3.PNG" class="artist-pic"></div>
+            <div><img src="image/p4.PNG" class="artist-pic"></div>
+            <div><img src="image/p5.jpg" class="artist-pic"></div>
+            <div><img src="image/p6.jpg" class="artist-pic"></div>
+        </div>
+    </div>
+    <!-- Dominations Section -->
+    <div class="mood">
+        <h2>Dominations</h2>
+        <div class="f-mood">
+            <div class="img-mood">
+                <div class="t-mood">Party</div>
+                <div class="abs"><img src="image/m1.jpg"></div>
+            </div>
+            <div class="img-mood">
+                <div class="t-mood">Electronic</div>
+                <div class="abs"><img src="image/m2.jpg"></div>
+            </div>
+            <div class="img-mood">
+                <div class="t-mood">Road-Trip</div>
+                <div class="abs"><img src="image/m3.jpg"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- English Song And Artist Section -->
+    <div class="english">
+        <h2>Latest English</h2>
+        <div class="f-english">
+            <div>
+                <img src="image/e1.jpg" class="artist-pic1">
+                <div class="e-artist">Taylor Swift</div>
+                <div class="e-artist">Reputation</div>
+            </div>
+            <div>
+                <img src="image/e2.jpg" class="artist-pic1">
+                <div class="e-artist">Otilia</div>
+                <div class="e-artist">Bilonera</div>
+            </div>
+            <div>
+                <img src="image/e3.jpg" class="artist-pic1">
+                <div class="e-artist">Taylor Swift</div>
+                <div class="e-artist">Red</div>
+            </div>
+            <div>
+                <img src="image/e4.png" class="artist-pic1">
+                <div class="e-artist">The Chainsmokers</div>
+                <div class="e-artist">Closer</div>
+            </div>
+            <div>
+                <img src="image/e5.jpg" class="artist-pic1">
+                <div class="e-artist">Sia</div>
+                <div class="e-artist">Cheap Thrills</div>
+            </div>
+            <div>
+                <img src="image/e6.jpg" class="artist-pic1">
+                <div class="e-artist">Shawn Mendes</div>
+                <div class="e-artist">Señorita</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Hindi Song And Artist Section -->
+    <div class="english">
+        <h2>Latest Hindi</h2>
+        <div class="f-english">
+            <div>
+                <img src="image/h1.jpg" class="artist-pic1">
+                <div class="e-artist">Ae Dil Hai Muskil</div>
+                <div class="e-artist">2016</div>
+            </div>
+            <div>
+                <img src="image/h2.jpg" class="artist-pic1">
+                <div class="e-artist">Gully Boy</div>
+                <div class="e-artist">2018</div>
+            </div>
+            <div>
+                <img src="image/h3.jpg" class="artist-pic1">
+                <div class="e-artist">Drive</div>
+                <div class="e-artist">2020</div>
+            </div>
+            <div>
+                <img src="image/h4.jpg" class="artist-pic1">
+                <div class="e-artist">Gabru</div>
+                <div class="e-artist">2020</div>
+            </div>
+            <div>
+                <img src="image/h5.jpg" class="artist-pic1">
+                <div class="e-artist">Baaghi 3</div>
+                <div class="e-artist">2019</div>
+            </div>
+            <div>
+                <img src="image/h6.jpeg" class="artist-pic1">
+                <div class="e-artist">Tara Sutaria</div>
+                <div class="e-artist">2020</div>
+            </div>
+        </div>
+
+    </div>
+
+	
+    </div>
+    <!-- Playlist queue Section -->
+<aside>
+    <div class="queueList">
+        <div class="flex-r queueHeader">
+            <span class="header">My Playlist</span>
+            <div class="flex-c queue_dropdown">
+                <input type="checkbox" id="queueCheck" />
+                <label for="queueCheck">Queue <i class="fa fa-caret-down"></i></label>
+                <div class="flex-r queue_dropdown_menu">
+                    <ul>
+                        <li class="menu_name">Playlists</li>
+                        <hr>
+                        <li class="menu_name">Favourite Songs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="queue">
+            <ul>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>01</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number" style="display: none;">
+                                <span>02</span>
+                            </div>
+                            <!-- Animating Bars -->
+                            <div class="flex-r music_bars">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q2.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Machayenge</span>
+                                <span class="artist_name">Emiway Bantai</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck2" />
+                            <label for="favCheck2"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>03</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q3.jpeg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Azaadi</span>
+                                <span class="artist_name">Gully Boy</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck3" />
+                            <label for="favCheck3"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>04</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q4.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Bilonera</span>
+                                <span class="artist_name">Otilia</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck4" />
+                            <label for="favCheck4"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>05</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q5.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">where have you been</span>
+                                <span class="artist_name">Rihanna</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck5" />
+                            <label for="favCheck5"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>06</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q6.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Girls like you </span>
+                                <span class="artist_name">Maroon 5</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck6" />
+                            <label for="favCheck6"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>07</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q7.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Blank space</span>
+                                <span class="artist_name">Taylor Swift</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck7" />
+                            <label for="favCheck7"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>08</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q8.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Bad Blood</span>
+                                <span class="artist_name">Taylor Swift</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck8" />
+                            <label for="favCheck8"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>09</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>10</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>11</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>12</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>13</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex-r song">
+
+                        <div class="flex-r song_image_details">
+                            <div class="flex-c song_number">
+                                <span>14</span>
+                            </div>
+                            <div class="song_image">
+                                <img src="image/q1.jpg" />
+                                <div class="play_btn">
+                                    <span><i class="fa fa-play"></i></span>
+                                </div>
+                            </div>
+                            <div class="flex-c song_details">
+                                <span class="song_name">Let me Down</span>
+                                <span class="artist_name">Chainsmokers</span>
+                            </div>
+                        </div>
+
+                        <div class="favourite">
+                            <input type="checkbox" id="favCheck1" />
+                            <label for="favCheck1"><span><i class="fa fa-heart"></i></span></label>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- Customized Player in footer of the page -->
+<footer>
+    <div class="player">
+        <div class="cursongart">
+            <img src="image/q8.jpg">
+            <span class="hidewhensmall">
+                <h4>Ready For It</h4>
+                <p>Taylor Swift</p>
+            </span>
+            <span class="hidewhensmall">
+                <i class="fa fa-heart" style="color: #948484;"></i>
+            </span>
+        </div>
+        <div class="control">
+            <audio src="songs/ready.mp3" id="player"></audio>
+            <button class="hidewhensmall"><i class="fas fa-random"></i></button>
+            <button onclick="document.getElementById('player').play()"><i class="fas fa-play-circle"></i></button>
+            <button onclick="document.getElementById('player').pause()"><i class="far fa-pause-circle"></i></button>
+            <button class="hidewhensmall"><i class="fas fa-redo"></i></button>
+        </div>
+        <div class="control">
+            <button onclick="document.getElementById('player').volume+=0.1"><i class="fas fa-volume-up"></i></button>
+            <button onclick="document.getElementById('player').volume-=0.1"><i class="fas fa-volume-down"></i></button>
+            <button onclick="document.getElementById('player').volume=0"><i class="fas fa-volume-mute"></i></button>
+            <button class="hidewhensmall"><i class="fas fa-expand-alt"></i></button>
+        </div>
+
+
+    </div>
+</footer>
+
+
+</body>
+</html>

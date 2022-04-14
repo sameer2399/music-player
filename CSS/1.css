@@ -1,0 +1,741 @@
+*{
+    color: white;
+}
+/*Navigation Bar*/
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0c1027;
+}
+
+.navbar{
+    width: 100%;
+    height: 130px;
+    background-color: #0c1027;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+    z-index: 130;
+}
+
+.navbar .navbarLeftSide{
+    height: 100%;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.logoImage{
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+}
+
+.logoImage img{
+    width: 100px;
+    height: 100px;
+}
+
+.logoName{
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: cursive;
+}
+
+.fav{
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.fav a{
+    text-decoration: none;
+
+}
+.fav a:hover
+{
+    text-decoration: underline;
+    color: lightgray;
+    transition: all 1s;
+}
+
+.navbar .navbarRightSide{
+    width: 40%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.searchInput{
+    justify-content: center;
+}
+
+.searchInput span{
+    position: relative;
+}
+
+.searchInput span::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "FontAwesome";
+    content: "\f002";
+    color: white;
+    width: 30px;
+    height: 100%;
+    font-size: 1.1rem;
+}
+
+.searchInput span::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "FontAwesome";
+    content: "\f130";
+    color: #93a8b3;
+    width: 30px;
+    height: 100%;
+    font-size: 1.1rem;
+}
+
+.searchInput input{
+    padding: 6px 35px;
+    border-radius: 10px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    background-color: #12193e;
+    color: white;
+    outline: none;
+}
+
+.searchInput input::placeholder{
+    color: #848484;
+    font-weight: 500;
+}
+
+.notification{
+    justify-content: center;
+}
+
+.notification .notification-bell{
+    color: #e6e6e6;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.notification .notification-bell::before{
+    position: absolute;
+    content: '';
+    top: 2px;
+    right: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff0f0f;
+}
+
+.profile{
+    justify-content: center;
+}
+
+.profileImage{
+    width: 55px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(61, 61, 209);
+}
+
+.profileImage img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* Main inline block page */
+.mainPage{
+    width: 70%;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 50px;
+
+}
+/* Carsoul Styling */
+.home_carousel{
+	display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+.home_carousel img{
+	width: 25%;
+	box-sizing: border-box;
+	box-shadow: 0 0 1px 1px black;
+	border-radius: 20px;
+	border: 2px solid white;
+    justify-content: space-between;
+    margin-left: -25px;
+}
+.left:hover{
+    transform: scale(1.2,1.2);
+    border-radius: 0;
+	transition: all 1s ease-in-out;
+}
+.right:hover{
+    transform: scale(1.2,1.2);
+    border-radius: 0;
+	transition: all 1s ease-in-out;
+}
+/* Latest song Styling */
+.l-songs{
+    margin-left: 30px;
+
+}
+.latest{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-between;
+
+
+}
+.latest img{
+    width: 50%;
+    margin-left: 10px;
+
+}
+.latest > div{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+
+}
+.art-name{
+    margin-left: 10px;
+    font-family: cursive;
+    font-size: 1rem;
+    color: lightslategray;
+}
+
+.play{
+    display: block;
+    position: absolute;
+    font-size: 2vw;
+    margin-left: 5.5vw;
+    margin-top: -4.0vw;
+    z-index: -1;
+
+}
+.latest img:hover{
+    opacity: 0.1;
+}
+.latest image:hover .play{
+    display: inline-block;
+}
+.pop-up{
+    display: none;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 70px;
+    box-sizing: border-box;
+    background-color: white;
+    position: absolute;
+    margin-left: -41px;
+    margin-top: -1px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.pop-up > div{
+    border-bottom: 1px solid black;
+    font-size: 1.2rem;
+    font-family: monospace;
+    color: black;
+}
+.btn{
+    background: transparent;
+    border: none;
+}
+/* Artist Design */
+.artist{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.p-artist{
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.artist-pic{
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+.artist-name{
+    font-family: 'Amatic SC', cursive;
+    font-size: 1rem;
+    text-align: center;
+}
+.p-artist div img:hover{
+    opacity: 0.1;
+}
+.play1 {
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 4.5rem;
+    margin-top: -5.7rem;
+     z-index: -1;
+}
+/* Catagory design */
+.catagory{
+    margin-left: 30px;
+    margin-top: 30px;
+   
+}
+.f-cat{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #1c2240;
+    padding: 5px;
+    border-radius: 20px;
+}
+.mood{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.f-mood{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.f-mood div img{
+    width: 350px;
+    height: 300px;
+}
+
+.t-mood{
+    position: absolute;
+    display: none;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: fantasy;
+    margin-left: 5rem;
+    margin-top: 15rem;
+    z-index: 2;
+
+}
+.abs img{
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 4px;
+}
+.img-mood{
+    width: 350px;
+    height: 300px;
+    overflow: hidden !important
+}
+.img-mood:hover .abs img{
+    transform: scale(1.5,1.5);
+    transition: all 2s ;
+}
+.img-mood:hover .t-mood{
+    display: block;
+    font-family: cursive;
+}
+/* English song section */
+.english{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.f-english{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.artist-pic1{
+    width: 150px;
+    height: 150px;
+    margin-left: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px #807663;
+
+}
+.e-artist{
+    font-family: cursive;
+    color: grey;
+    margin-left: 7px;
+}
+/* Playlist queue Section */
+aside{
+    display: inline-block;
+    width: 20%;
+    vertical-align: top;
+    margin-left: 20px;
+}
+.queue{
+    height: 90vh;
+    overflow-y: scroll;
+}
+.queue::-webkit-scrollbar {
+    width: 5px;
+  }
+   
+.queue::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+.queue::-webkit-scrollbar-thumb {
+    background-color: #2f3035;
+    outline: 1px solid slategrey;
+  }
+
+.mainPage .queueList{
+    width: 30%;
+    height: fit-content;
+    padding-top: 30px;
+    font-family: sans-serif;
+}
+
+.queueHeader{
+    justify-content: space-between;
+}
+
+.queueHeader .header{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.queueHeader .queue_dropdown{
+    align-items: flex-end;
+    position: relative;
+}
+
+.queueHeader .queue_dropdown input{
+    display: none;
+}
+
+.queueHeader .queue_dropdown label{
+    color: #41b6a1;    
+    margin: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.queueHeader .queue_dropdown input:checked ~ .queue_dropdown_menu{
+    display: flex;
+}
+.menu_name{
+    color: black;
+}
+
+.queueList .queue_dropdown_menu{
+    background-color: white;
+    color: black;
+    padding: 7px;
+    font-weight: 600;
+    font-size: 0.8rem;    
+    margin: 10px;
+    margin-top: 0;
+    white-space: nowrap;
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -80px;
+}
+
+.queueList .queue_dropdown_menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.queueList .queue_dropdown_menu ul li{
+    margin: 8px 15px;
+    cursor: pointer;
+}
+
+.queueList .queue{
+    padding: 30px;
+}
+
+.queueList .queue ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.queueList .queue .song{
+    align-items: center;
+    justify-content: space-between;
+    color: #93a8b3;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: sans-serif;
+}
+
+.song .song_image_details{
+    align-items: center;
+}
+
+.song_image_details .music_bars{
+    align-items: flex-end;
+}
+
+.song_image_details .music_bars div{
+    border: 2px solid #21b7d8;
+    margin-right: 2px;
+}
+
+.song_image_details .music_bars div:nth-child(3n + 1){
+    height: 0;
+    animation: beat 0.5s ease 0s infinite;
+}
+
+.song_image_details .music_bars div:nth-child(3n + 2){
+    height: 0;
+    animation: beat 0.5s ease 0.2s infinite;
+}
+
+.song_image_details .music_bars div:nth-child(3n){
+    height: 0;
+    animation: beat 0.5s ease 0.4s infinite;
+}
+/* animation for the bars */
+@keyframes beat{
+    from{
+        height: 0;
+    }
+    to{
+        height: 15px;
+    }
+}
+
+.song_image_details .song_number{
+    font-size: 1rem;
+}
+
+.song_image_details .song_image{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid white;
+    transition: all 0.2s linear;
+    position: relative;
+}
+
+.song_image_details .song_image img{
+    width: inherit;
+    height: inherit;
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.song_image_details .song_image .play_btn{
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.song_image_details .song_image:hover{
+    box-shadow: 0px 0px 5px 4px lightgoldenrodyellow;
+}
+
+.song_image_details .song_image:hover img{
+    opacity: 0.2;
+}
+
+.song_image_details .song_image:hover .play_btn{
+    opacity: 1;
+}
+
+.song_details .song_name{
+    font-size: 1rem;
+    color: white;
+}
+
+.song_details .artist_name{
+    font-size: 0.9rem;
+}
+
+.song .favourite{
+    color: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.song .favourite:hover{
+    font-size: 1.3rem;
+}
+
+.song .favourite label{
+    cursor: pointer;
+} 
+
+.song .favourite input{
+    display: none;
+}
+/* Custom player Design */
+.player{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282828;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+
+}
+.cursongart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 2px;
+    width: 13%;
+    font-family: sans-serif;
+}
+
+.song .favourite input:checked ~ label{
+    color: red;
+}
+
+.cursongart img
+{
+    width:50px;
+    height: 50px;
+}
+#song-control{
+    width: 40%;
+
+}
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+}
+
+.control button{
+    background: transparent;
+    padding: 0;
+    border: 0;
+    font-size: 25px;
+}
+/* Responsive page */
+@media (max-width:1130px){
+    body{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .latest{
+        flex-direction: column;
+        line-height: 20px;
+    }
+    .latest img{
+        width: 285px;
+    }
+    .play{
+        font-size: 30px;
+        margin-left: 145px;
+        margin-top: -106px;
+    }
+}
+@media (max-width: 1000px){
+    .navbar .fav{
+        display: none;
+    }
+    .home_carousel img{
+        margin-left: 0;
+    }
+}
+@media (max-width: 900px){
+    .navbar .navbarRightSide .notification{
+        display: none;
+    }
+    .navbar .navbarRightSide{
+        width: 60%;
+    }
+    .home_carousel img {
+        width: 50%;
+        height: 110px;
+        box-sizing: border-box;
+        box-shadow: 0 0 1px 1px black;
+        border-radius: 20px;
+        border: 2px solid white;
+        justify-content: space-between;
+    }
+    .left:hover{
+        transform: scale(1.3,1.3);
+        transition: all 1s ease-in-out;
+    }
+    .right:hover{
+        transform: scale(1.3,1.3);
+        transition: all 1s ease-in-out;
+    }
+}
+@media (max-width: 700px){
+    .mainPage{
+        width: 100%;
+        margin: 0;
+        margin-left: -15px;
+    }
+    .logoImage img {
+        width: 75px;
+        height: 75px;
+    }
+     aside{
+        display: block;
+        width: 90%;
+    }
+    .hidewhensmall{
+        display: none;
+    }
+    .control{
+        width: 40%;
+    }
+    #song-control{
+        width: 25%;
+    }
+    .navbar .navbarRightSide .searchInput{
+        display: none;
+    }
+    .navbar .navbarRightSide{
+        justify-content: flex-end;
+    }
+   
+}
